@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form name= "cal">
+        <div class="display">
+            <input id="input" type="text" placeholder="0">
+        </div>
+        <div class="button">
+            <div class="row">
+                <input type="button" name="b7"value="7" onclick="getValue('7')">
+                <input type="button" name="b8"value="8" onclick="getValue('8')">
+                <input type="button" name="b9"value="9" onclick="getValue('9')">
+                <input type="button" name="add"value="+" onclick="getValue('+')">
+            </div>
+            <div class="row">
+                <input type="button" name="b4"value="4" onclick="getValue('4')">
+                <input type="button" name="b5"value="5" onclick="getValue('5')">
+                <input type="button" name="b6"value="6" onclick="getValue('6')">
+                <input type="button" name="sub"value="-" onclick="getValue('-')">
+            </div>
+            <div class="row">
+                <input type="button" name ="b1" value="1" onclick="getValue('1')">
+                <input type="button" name ="b2" value="2" onclick="getValue('2')">
+                <input type="button" name ="b3" value="3" onclick="getValue('3')">
+                <input type="button" name ="b3" value="*" onclick="getValue('*')">
+            </div>
+            <div class="row">
+                <input type="button" name ="b0" value="0" onclick="getValue('0')">
+                <input type="button" name ="point" value="." onclick="getValue('.')">
+                <input type="button" name ="divide" value="/" onclick="getValue('/')">
+                <input type="button" name ="percentage" value="%" onclick="getValue('%')">
+            </div>
+            <div class="row">
+           
+                <input type="button" name ="C" value="C" onclick="oneRemove('')">
+                <input type="button" name ="AC" value="AC" onclick="allClear('')">
+                <input type="button" id="EqualVal" class ="isEqual" value="=" onclick="totalValue('')">
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
